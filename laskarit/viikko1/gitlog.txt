@@ -1,3 +1,5 @@
+Hei Maailma!
+
 tillder@vdi-cubic-029:~/tiedostoja$ git log --stat | cat
 commit 0858beb27f28811a961ca5766677a8d312b688ea
 Author: Eva Tillder <eva-maria.tillder@helsinki.fi>
