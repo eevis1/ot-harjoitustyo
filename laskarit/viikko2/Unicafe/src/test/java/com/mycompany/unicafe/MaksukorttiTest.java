@@ -17,40 +17,34 @@ public class MaksukorttiTest {
     public void luotuKorttiOlemassa() {
         assertTrue(kortti!=null);      
     }
-    
+
     @Test
     public void konstruktoriAsettaaSaldonOikein() {
-        assertEquals("Kortilla on rahaa 10.0 euroa", kortti.toString());
+        assertEquals("Kortin saldon alussa pitäisi olla. Tarkasta koodi: "
+                + "k = new Maksukortti(10);", 10, kortti.saldo(), 0.01);
     }
-    
+ 
     @Test
-    public void rahanLataaminenKasvattaaSaldoaOikein() {
-        kortti.lataaRahaa(25);
-        assertEquals("Kortilla on rahaa 35.0 euroa", kortti.toString());
+    public void lataaminenKasvattaaKortinSaldoa() {
+        kortti.lataaRahaa(10);
+        String virhe = "Tomiiko rahan lataaminen? tarkasta koodi:\n"
+                + "kortti = new Maksukortti(10); kortti.saldo()";
+        assertEquals(virhe, 20, kortti.saldo(), 0.01);
     }
-    
+
     @Test
-    public void saldoVaheneeOikeinJosRahaaOnTarpeeksi() {
-        kortti.otaRahaa(5);
-        assertEquals("Kortilla on rahaa 5.0 euroa", kortti.saldo());
+    public void kortiltaVoiOttaaRahaaJosSaldoRittaa() {
+        assertEquals("Jos kortilla raha riittää, pitäisi otaRahaa-metodin palauttaa true. Tarkasta koodi: \n"
+                + "k = new Maksukortti(10); k.otaRahaa(8);", true, kortti.otaRahaa(8));
+        assertEquals("Kortin saldon pitäisi vähetä kun rahaa otetaan. Tarkasta koodi: "
+                + "k = new Maksukortti(10); k.otaRahaa(8);", 2, kortti.saldo(), 0.01);
     }
     
     @Test
     public void saldoEiMuutuJosRahaaEiOleTarpeeksi() {
-        kortti.otaRahaa(15);
-        assertEquals("Kortilla on rahaa 10.0 euroa", kortti.saldo());
+        assertEquals("Jos kortilla ei ole tarpeeksi rahaa, otaRahaa-metodin tulisi palauttaa false. Tarkasta koodi: "
+                + "k = new Maksukortti(10); k.otaRahaa(11);", false, kortti.otaRahaa(11));
+        assertEquals("Jos kortilla ei ole tarpeeksi rahaa, saldo ei muutu. Tarkasta koodi: "
+                + "k = new Maksukortti(10); k.otaRahaa(11);", 10, kortti.saldo(), 0.01);
     }
-    
-    @Test
-    public void metodiPalauttaaTrueJosRahatRiittivat() {
-        kortti.otaRahaa(5);
-        assertEquals(true, kortti.otaRahaa(5));
-    } 
-    
-    @Test
-    public void metodiPalauttaaFalseJosRahatEivatRiittaneet() {
-        kortti.otaRahaa(15);
-        assertEquals(false, kortti.otaRahaa(5));
-    } 
-    
 }

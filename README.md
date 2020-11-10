@@ -11,6 +11,8 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 [komentorivi.txt](https://github.com/eevis1/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 
+[maarittelydokumentti.txt](https://github.com/eevis1/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.txt)
+
 As the teacher once said:
 
 > Do your homework
