@@ -1,21 +1,21 @@
-#Vaatimusmäärittely
+# Vaatimusmäärittely
 
 
-##Sovelluksen tarkoitus
+## Sovelluksen tarkoitus
 
 Sovelluksen avulla opiskelijan on helppo pitää kirjaa suorittamistaan ja suunnittelemistaan opinnoista. Sovelluksen avulla myös opettajat voivat seurata opiskelijoiden etenemistä opinnoissa. Kaikki käyttäjät rekisteröityvät sovelluksen käyttäjiksi.
 
 
-##Käyttäjät
+## Käyttäjät
 
 Käyttäjärooleina ovat opiskelija ja opettaja, joista opettajalla on laajemmat käyttöoikeudet sovelluksesa.
 
 
-##Suunnitellut toiminnallisuudet
+## Suunnitellut toiminnallisuudet
 
-###Perusversio
+### Perusversio
 
-####Ennen kirjautumista
+#### Ennen kirjautumista
 
 * Käyttäjän täytyy luoda järjestelmään käyttäjätunnus ja salasana ennen ensimmäistä käyttökertaa.
 	* Käyttäjätunnuksen ja salasanan täytyy olla uniikkeja ja vähintään kolme merkkiä pitkiä.
@@ -23,7 +23,7 @@ Käyttäjärooleina ovat opiskelija ja opettaja, joista opettajalla on laajemmat
 	* Kirjautuminen onnistuu syöttämällä olemassa oleva käyttäjätunnus ja oikea salasana kirjautumislomakkeella.
 	* Jos käyttäjää ei ole olemassa tai annettu salasana on väärä, järjestelmä ilmoittaa tästä.
 
-####Kirjautumisen jälkeen
+#### Kirjautumisen jälkeen
 
 * Käyttäjä voi valita opintosuunnan.
 * Käyttäjä näkee valitsemansa opintosuunnan pakolliset kurssit.
@@ -33,7 +33,7 @@ Käyttäjärooleina ovat opiskelija ja opettaja, joista opettajalla on laajemmat
 * Käyttäjä voi kirjautua ulos järjestelmästä.
 
 
-###Jatkokehitysideoita
+### Jatkokehitysideoita
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla:
 * Mahdollisuus kurssien aikataulutukseen.
