@@ -10,6 +10,10 @@ import java.util.stream.Collectors;
 
 
 public class Actions{
+
+    static void main(String[] args) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     private Course course;
     private User user;
