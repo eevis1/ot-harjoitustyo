@@ -1,3 +1,3 @@
 
-![Luokkakaavio](//home/tillder/ot-harjoitustyo/dokumentaatio/kaavio.jpg)
+![Luokkakaavio](/ot-harjoitustyo/dokumentaatio/kaavio.jpg)
 Format: ![Luokkakaavio](url)
