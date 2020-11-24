@@ -50,6 +50,7 @@ Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto *target/site/ja
 Komento
 
 > mvn package
+
 generoi hakemistoon target suoritettavan jar-tiedoston *OtmTodoApp-1.0-SNAPSHOT.jar*
 
 
