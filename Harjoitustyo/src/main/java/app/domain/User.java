@@ -1,5 +1,5 @@
 
-package com.mycompany.harjoitustyo;
+package app.domain;
 
 
 public class User {

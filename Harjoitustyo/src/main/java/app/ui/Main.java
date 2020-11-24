@@ -1,5 +1,7 @@
 
-package com.mycompany.harjoitustyo;
+package app.ui;
+
+import app.domain.Actions;
 
 
 public class Main {

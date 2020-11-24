@@ -1,7 +1,9 @@
 
-package com.mycompany.harjoitustyo;
+package app.domain;
 
 
+import app.domain.Course;
+import app.domain.User;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;

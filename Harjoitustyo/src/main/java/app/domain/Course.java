@@ -1,5 +1,7 @@
 
-package com.mycompany.harjoitustyo;
+package app.domain;
+
+import app.domain.User;
 
 
 public class Course {
