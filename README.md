@@ -1,5 +1,7 @@
 # Ohjelmistotekniikka, harjoitustyö
 
+Opintokirjanpitosovelluksen avulla opiskelijan on helppo pitää kirjaa suorittamistaan ja suunnittelemistaan opinnoista. Sovelluksen avulla myös opettajat voivat seurata opiskelijoiden etenemistä opinnoissa. Kaikki käyttäjät rekisteröityvät sovelluksen käyttäjiksi.
+
 ## Dokumentaatio
 
 
